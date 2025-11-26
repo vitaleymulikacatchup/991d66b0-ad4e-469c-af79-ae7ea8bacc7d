@@ -2,11 +2,11 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
-import FaqDouble from '@/components/sections/faq/FaqDouble';
 import BlogCardOne from '@/components/sections/blog/BlogCardOne';
+import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import { HelpCircle, Newspaper, Mail, Instagram, Twitter, Facebook, Youtube } from "lucide-react";
+import { BookOpen, HelpCircle, Mail, Instagram, Twitter, Facebook, Youtube } from "lucide-react";
 import Link from "next/link";
 
 export default function NewsPage() {
@@ -27,7 +27,6 @@ export default function NewsPage() {
         <NavbarLayoutFloatingInline
           navItems={[
             { name: "Home", id: "/" },
-            { name: "About", id: "/about" },
             { name: "Episodes", id: "/episodes" },
             { name: "Cast", id: "/cast" }
           ]}
@@ -39,16 +38,87 @@ export default function NewsPage() {
         />
       </div>
 
+      <div id="blog" data-section="blog">
+        <BlogCardOne
+          title="Latest News & Updates"
+          description="Stay up to date with the latest Stranger Things news, behind-the-scenes content, and exclusive interviews."
+          tag="Breaking News"
+          tagIcon={BookOpen}
+          buttons={[
+            {
+              text: "View All Articles",
+              href: "https://netflix.com/tudum/stranger-things"
+            },
+            {
+              text: "Subscribe",
+              href: "#contact"
+            }
+          ]}
+          textboxLayout="split"
+          animationType="slide-up"
+          blogs={[
+            {
+              id: "1",
+              category: "Behind the Scenes",
+              title: "The Making of Season 5's Epic Finale",
+              excerpt: "Go behind the cameras for an exclusive look at how the Duffer Brothers crafted the most ambitious season yet.",
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Behind the scenes of Stranger Things Season 5",
+              authorName: "Sarah Mitchell",
+              authorAvatar: "/placeholders/placeholder1.webp",
+              date: "Dec 15, 2024",
+              onBlogClick: () => window.open("https://netflix.com/tudum/stranger-things-season-5-finale", "_blank")
+            },
+            {
+              id: "2",
+              category: "Cast Interviews",
+              title: "Millie Bobby Brown Reflects on Eleven's Journey",
+              excerpt: "The star opens up about saying goodbye to her iconic character and what the role has meant to her.",
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Millie Bobby Brown interview",
+              authorName: "James Rodriguez",
+              authorAvatar: "/placeholders/placeholder1.webp",
+              date: "Dec 10, 2024",
+              onBlogClick: () => window.open("https://netflix.com/tudum/millie-bobby-brown-eleven-interview", "_blank")
+            },
+            {
+              id: "3",
+              category: "Production Notes",
+              title: "Creating the Upside Down's Final Form",
+              excerpt: "Visual effects artists reveal how they brought the most terrifying version of the Upside Down to life.",
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Upside Down visual effects",
+              authorName: "Elena Carter",
+              authorAvatar: "/placeholders/placeholder1.webp",
+              date: "Dec 5, 2024",
+              onBlogClick: () => window.open("https://netflix.com/tudum/upside-down-visual-effects", "_blank")
+            },
+            {
+              id: "4",
+              category: "Fan Community",
+              title: "Fan Theories That Came True in Season 5",
+              excerpt: "We explore the most accurate fan predictions and how the community helped shape the final season.",
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Stranger Things fan theories",
+              authorName: "Alex Chen",
+              authorAvatar: "/placeholders/placeholder1.webp",
+              date: "Nov 28, 2024",
+              onBlogClick: () => window.open("https://netflix.com/tudum/stranger-things-fan-theories", "_blank")
+            }
+          ]}
+        />
+      </div>
+
       <div id="faq" data-section="faq">
-        <FaqDouble
+        <FaqBase
           title="Frequently Asked Questions"
-          description="Everything you need to know about Stranger Things Season 5 and streaming options."
+          description="Find answers to the most common questions about Stranger Things Season 5 and streaming options."
           tag="Help Center"
           tagIcon={HelpCircle}
           buttons={[
             {
               text: "Contact Support",
-              href: "https://help.netflix.com"
+              href: "https://help.netflix.com/contactus"
             }
           ]}
           textboxLayout="default"
@@ -56,85 +126,33 @@ export default function NewsPage() {
           faqs={[
             {
               id: "1",
-              title: "When was Season 5 released?",
-              content: "Stranger Things Season 5 was released on Netflix in July 2024, marking the epic conclusion to the beloved series."
+              title: "When was Stranger Things Season 5 released?",
+              content: "Stranger Things Season 5, the final season, was released on Netflix in December 2024. All episodes are now available to stream with your Netflix subscription."
             },
             {
               id: "2",
-              title: "Is this the final season?",
-              content: "Yes, Season 5 serves as the final chapter of Stranger Things, wrapping up the story that began in Hawkins back in 2016."
+              title: "How many episodes are in Season 5?",
+              content: "Season 5 consists of 8 episodes, with extended runtimes for the final season. The season finale is feature-length, providing an epic conclusion to the series."
             },
             {
               id: "3",
-              title: "How many episodes are in Season 5?",
-              content: "Season 5 features 8 feature-length episodes, with the finale running over 2 hours to give the story the epic conclusion it deserves."
+              title: "Do I need to watch previous seasons first?",
+              content: "Yes, we highly recommend watching Seasons 1-4 before diving into Season 5. The final season builds on storylines and character development from all previous seasons."
             },
             {
               id: "4",
-              title: "Do I need to watch previous seasons?",
-              content: "Yes, we highly recommend watching Seasons 1-4 first as Season 5 concludes storylines and character arcs from throughout the series."
+              title: "Is this really the final season?",
+              content: "Yes, the Duffer Brothers have confirmed that Season 5 is the planned conclusion of Stranger Things. However, Netflix has announced spin-off projects set in the same universe."
             },
             {
               id: "5",
-              title: "Is there a way to watch for free?",
-              content: "Netflix offers a free trial for new subscribers. You can also check if your mobile carrier or internet provider includes Netflix in their plans."
+              title: "What devices can I watch on?",
+              content: "You can watch Stranger Things on any device that supports Netflix: smart TVs, computers, phones, tablets, gaming consoles, and streaming devices like Roku or Apple TV."
             },
             {
               id: "6",
-              title: "Will there be spin-offs?",
-              content: "While Stranger Things ends with Season 5, the Duffer Brothers have hinted at potential spin-off projects set in the same universe. Stay tuned for announcements!"
-            }
-          ]}
-        />
-      </div>
-
-      <div id="blog" data-section="blog">
-        <BlogCardOne
-          title="Latest News & Behind the Scenes"
-          description="Go deeper into the world of Stranger Things with exclusive content, cast interviews, and production insights."
-          tag="Stranger Things Blog"
-          tagIcon={Newspaper}
-          buttons={[
-            {
-              text: "All Articles",
-              href: "https://blog.netflix.com"
-            }
-          ]}
-          textboxLayout="default"
-          animationType="slide-up"
-          blogs={[
-            {
-              id: "1",
-              category: "Behind the Scenes",
-              title: "Creating the Upside Down: VFX Breakdown",
-              excerpt: "Discover how the visual effects team brought the terrifying alternate dimension to life in Season 5's most intense sequences.",
-              imageSrc: "/placeholders/placeholder1.webp",
-              imageAlt: "Stranger Things behind the scenes production",
-              authorName: "Netflix Production Team",
-              authorAvatar: "/placeholders/placeholder1.webp",
-              date: "Dec 15, 2024"
-            },
-            {
-              id: "2",
-              category: "Set Design",
-              title: "Building Hawkins for the Final Time",
-              excerpt: "Take a farewell tour of the iconic sets and locations that have defined Stranger Things throughout its five-season run.",
-              imageSrc: "/placeholders/placeholder1.webp",
-              imageAlt: "Stranger Things set design upside down",
-              authorName: "Production Design Team",
-              authorAvatar: "/placeholders/placeholder1.webp",
-              date: "Dec 10, 2024"
-            },
-            {
-              id: "3",
-              category: "Cast Interviews",
-              title: "The Cast Reflects on Their Journey",
-              excerpt: "Emotional interviews with the main cast as they share their favorite memories and bid farewell to their iconic characters.",
-              imageSrc: "/placeholders/placeholder1.webp",
-              imageAlt: "Stranger Things cast interviews",
-              authorName: "Entertainment Weekly",
-              authorAvatar: "/placeholders/placeholder1.webp",
-              date: "Dec 5, 2024"
+              title: "Can I download episodes to watch offline?",
+              content: "Yes, Netflix allows you to download episodes of Stranger Things to your mobile device or tablet for offline viewing. This feature is available on the Netflix mobile app."
             }
           ]}
         />
@@ -142,13 +160,14 @@ export default function NewsPage() {
 
       <div id="contact" data-section="contact">
         <ContactCenter
-          tag="Press & Media"
-          title="Stay Connected"
-          description="Get the latest updates, behind-the-scenes content, and exclusive Stranger Things news delivered straight to your inbox."
+          tag="Stay Connected"
           tagIcon={Mail}
+          title="Get Exclusive Stranger Things Updates"
+          description="Be the first to know about new episodes, behind-the-scenes content, cast interviews, and special events. Join our newsletter for exclusive Stranger Things content delivered straight to your inbox."
           inputPlaceholder="Enter your email address"
           buttonText="Subscribe Now"
-          termsText="By subscribing, you agree to receive Netflix promotional emails. You can unsubscribe at any time."
+          termsText="By subscribing, you agree to receive emails from Netflix about Stranger Things and other series. You can unsubscribe at any time."
+          onSubmit={(email) => console.log("Newsletter signup:", email)}
         />
       </div>
 

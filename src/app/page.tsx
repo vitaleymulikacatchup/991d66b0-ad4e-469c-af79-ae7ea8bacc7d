@@ -3,7 +3,6 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import HeroOverlay from '@/components/sections/hero/HeroOverlay';
-import AboutPhoneTimeline from '@/components/sections/about/AboutPhoneTimeline';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
 import { Play, Users, Film, Instagram, Twitter, Facebook, Youtube } from "lucide-react";
@@ -26,7 +25,6 @@ export default function HomePage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
           navItems={[
-            { name: "About", id: "/about" },
             { name: "Episodes", id: "/episodes" },
             { name: "Cast", id: "/cast" },
             { name: "News", id: "/news" }
@@ -60,33 +58,6 @@ export default function HomePage() {
           textPosition="bottom-left"
           showBlur={true}
           showDimOverlay={true}
-        />
-      </div>
-
-      <div id="about" data-section="about">
-        <AboutPhoneTimeline
-          title="Meet the Heroes of Hawkins"
-          description="Follow the journey of Eleven, Mike, Dustin, Lucas, and Will as they face supernatural forces and fight to save their hometown from the Upside Down. Get the latest updates, behind-the-scenes content, and exclusive Stranger Things news delivered straight to your inbox. Everything you need to know about Stranger Things Season 5 and streaming options. Go deeper into the world of Stranger Things with exclusive content, cast interviews, and production insights."
-          tag="The Cast"
-          tagIcon={Users}
-          buttons={[
-            {
-              text: "Full Cast",
-              href: "/cast"
-            },
-            {
-              text: "Character Guide",
-              href: "https://strangerthings.fandom.com"
-            }
-          ]}
-          phoneOne={{
-            imageSrc: "/placeholders/placeholder1.webp",
-            imageAlt: "Eleven character portrait"
-          }}
-          phoneTwo={{
-            imageSrc: "/placeholders/placeholder1.webp",
-            imageAlt: "Hawkins group cast"
-          }}
         />
       </div>
 

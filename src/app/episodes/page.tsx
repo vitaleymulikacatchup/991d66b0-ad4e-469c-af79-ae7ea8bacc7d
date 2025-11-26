@@ -27,7 +27,6 @@ export default function EpisodesPage() {
         <NavbarLayoutFloatingInline
           navItems={[
             { name: "Home", id: "/" },
-            { name: "About", id: "/about" },
             { name: "Cast", id: "/cast" },
             { name: "News", id: "/news" }
           ]}

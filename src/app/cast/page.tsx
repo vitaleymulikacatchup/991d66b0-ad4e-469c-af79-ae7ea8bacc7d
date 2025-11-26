@@ -27,7 +27,6 @@ export default function CastPage() {
         <NavbarLayoutFloatingInline
           navItems={[
             { name: "Home", id: "/" },
-            { name: "About", id: "/about" },
             { name: "Episodes", id: "/episodes" },
             { name: "News", id: "/news" }
           ]}
