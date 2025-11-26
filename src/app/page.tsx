@@ -148,7 +148,7 @@ export default function HomePage() {
 
       <div id="footer" data-section="footer">
         <FooterSocial
-          brandName="Stranger Things"
+          brandName="Stranger Things Last season"
           columns={[
             {
               title: "Series",
