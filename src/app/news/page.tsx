@@ -31,7 +31,7 @@ export default function NewsPage() {
             { name: "Episodes", id: "/episodes" },
             { name: "Cast", id: "/cast" }
           ]}
-          brandName="Stranger Things"
+          brandName="Stranger Things Last seasson"
           button={{
             text: "Stream Now",
             href: "https://netflix.com/title/80057281"

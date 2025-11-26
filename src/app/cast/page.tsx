@@ -30,7 +30,7 @@ export default function CastPage() {
             { name: "Episodes", id: "/episodes" },
             { name: "News", id: "/news" }
           ]}
-          brandName="Stranger Things"
+          brandName="Stranger Things Last seasson"
           button={{
             text: "Stream Now",
             href: "https://netflix.com/title/80057281"
