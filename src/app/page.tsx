@@ -39,7 +39,7 @@ export default function HomePage() {
 
       <div id="hero" data-section="hero">
         <HeroOverlay
-          title="The Final Chapter Awaits"
+          title="The Final Chapter Awaits (5 season)"
           description="Hawkins faces its darkest hour as the Upside Down threatens to consume everything. Join Eleven and the gang for their ultimate battle in Stranger Things Season 5."
           tag="Now Streaming"
           tagIcon={Play}
