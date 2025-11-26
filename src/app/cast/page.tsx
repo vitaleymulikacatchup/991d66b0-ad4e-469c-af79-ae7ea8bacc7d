@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import TeamCardThree from '@/components/sections/team/TeamCardThree';
-import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
+import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
 import { Camera, MessageSquare, Tv, Instagram, Twitter, Facebook, Youtube, Linkedin } from "lucide-react";
@@ -102,33 +102,29 @@ export default function CastPage() {
       </div>
 
       <div id="testimonial" data-section="testimonial">
-        <TestimonialCardTwo
+        <TestimonialCardOne
           title="Critical Acclaim & Fan Love"
           description="See what critics and fans are saying about the final season of Stranger Things."
           tag="Reviews"
-          tagIcon={MessageSquare}
-          buttons={[
-            {
-              text: "More Reviews",
-              href: "https://rottentomatoes.com/tv/stranger_things"
-            }
-          ]}
           textboxLayout="default"
+          gridVariant="uniform-all-items-equal"
           animationType="blur-reveal"
           testimonials={[
             {
               id: "1",
               name: "James Hibberd",
-              role: "Entertainment Weekly Chief TV Critic",
-              testimonial: "Stranger Things Season 5 delivers an emotionally devastating and visually spectacular conclusion that will leave fans both satisfied and heartbroken.",
+              role: "Entertainment Weekly",
+              company: "Chief TV Critic",
+              rating: 5,
               imageSrc: "/placeholders/placeholder1.webp",
               imageAlt: "Entertainment Weekly critic"
             },
             {
               id: "2",
               name: "Caroline Framke",
-              role: "Variety Senior TV Critic",
-              testimonial: "The Duffer Brothers have crafted a masterful ending that honors the show's legacy while pushing the boundaries of what television can achieve.",
+              role: "Variety",
+              company: "Senior TV Critic",
+              rating: 5,
               imageSrc: "/placeholders/placeholder1.webp",
               imageAlt: "Variety magazine critic"
             },
@@ -136,7 +132,8 @@ export default function CastPage() {
               id: "3",
               name: "Sarah Chen",
               role: "Netflix Subscriber",
-              testimonial: "I've been watching since day one and this finale exceeded all my expectations. An absolute masterpiece that will be remembered forever.",
+              company: "Fan Since Day One",
+              rating: 5,
               imageSrc: "/placeholders/placeholder1.webp",
               imageAlt: "Stranger Things fan viewer"
             },
@@ -144,7 +141,8 @@ export default function CastPage() {
               id: "4",
               name: "Marcus Rodriguez",
               role: "Streaming Enthusiast",
-              testimonial: "The emotional depth and incredible performances make this the perfect send-off for one of the greatest shows of our generation.",
+              company: "Binge Watcher",
+              rating: 5,
               imageSrc: "/placeholders/placeholder1.webp",
               imageAlt: "Netflix subscriber viewer"
             }

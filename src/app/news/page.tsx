@@ -5,6 +5,7 @@ import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloating
 import BlogCardOne from '@/components/sections/blog/BlogCardOne';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
+import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
 import { BookOpen, HelpCircle, Mail, Instagram, Twitter, Facebook, Youtube } from "lucide-react";
 import Link from "next/link";
@@ -168,6 +169,46 @@ export default function NewsPage() {
           buttonText="Subscribe Now"
           termsText="By subscribing, you agree to receive emails from Netflix about Stranger Things and other series. You can unsubscribe at any time."
           onSubmit={(email) => console.log("Newsletter signup:", email)}
+        />
+      </div>
+
+      <div id="testimonial" data-section="testimonial">
+        <TestimonialCardOne
+          title="Reader Reviews"
+          description="See what our newsletter subscribers are saying about our exclusive content and updates"
+          tag="Subscriber Feedback"
+          textboxLayout="default"
+          gridVariant="uniform-all-items-equal"
+          animationType="opacity"
+          testimonials={[
+            {
+              id: "1",
+              name: "Jennifer Walsh",
+              role: "Newsletter Subscriber",
+              company: "Fan Community Member",
+              rating: 5,
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Jennifer Walsh newsletter subscriber"
+            },
+            {
+              id: "2",
+              name: "Kevin Martinez",
+              role: "Long-time Reader",
+              company: "Streaming Enthusiast",
+              rating: 5,
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Kevin Martinez newsletter reader"
+            },
+            {
+              id: "3",
+              name: "Rachel Kim",
+              role: "Content Creator",
+              company: "YouTube Channel",
+              rating: 5,
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Rachel Kim content creator"
+            }
+          ]}
         />
       </div>
 

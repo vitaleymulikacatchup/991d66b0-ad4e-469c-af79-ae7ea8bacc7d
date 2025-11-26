@@ -5,6 +5,7 @@ import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloating
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
 import MetricCardThree from '@/components/sections/metrics/MetricCardThree';
+import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
 import { ShoppingBag, Tv, Globe, Star, Sparkles, Crown, Eye, Award, TrendingUp, Instagram, Twitter, Facebook, Youtube } from "lucide-react";
 import Link from "next/link";
@@ -186,6 +187,55 @@ export default function EpisodesPage() {
               icon: TrendingUp,
               title: "Seasons Produced",
               value: "5"
+            }
+          ]}
+        />
+      </div>
+
+      <div id="testimonial" data-section="testimonial">
+        <TestimonialCardOne
+          title="Fan Reactions to Season 5"
+          description="See what viewers are saying about the epic finale of Stranger Things"
+          tag="Fan Reviews"
+          textboxLayout="default"
+          gridVariant="uniform-all-items-equal"
+          animationType="slide-up"
+          testimonials={[
+            {
+              id: "1",
+              name: "Alexandra Williams",
+              role: "Superfan",
+              company: "Netflix Subscriber",
+              rating: 5,
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Alexandra Williams fan review"
+            },
+            {
+              id: "2",
+              name: "David Thompson",
+              role: "Binge Watcher",
+              company: "Day One Fan",
+              rating: 5,
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "David Thompson fan review"
+            },
+            {
+              id: "3",
+              name: "Jessica Park",
+              role: "TV Critic",
+              company: "Entertainment Today",
+              rating: 5,
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Jessica Park professional review"
+            },
+            {
+              id: "4",
+              name: "Michael Chang",
+              role: "Streaming Expert",
+              company: "Tech Reviews",
+              rating: 5,
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Michael Chang expert review"
             }
           ]}
         />

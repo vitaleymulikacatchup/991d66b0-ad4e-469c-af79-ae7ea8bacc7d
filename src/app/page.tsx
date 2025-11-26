@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import HeroOverlay from '@/components/sections/hero/HeroOverlay';
 import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
+import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
 import { Play, Users, Film, Instagram, Twitter, Facebook, Youtube } from "lucide-react";
 import Link from "next/link";
@@ -100,6 +101,46 @@ export default function HomePage() {
               description: "The town of Hawkins becomes the epicenter of a supernatural war that will determine the fate of both worlds.",
               imageSrc: "/placeholders/placeholder1.webp",
               imageAlt: "Stranger Things Hawkins town supernatural"
+            }
+          ]}
+        />
+      </div>
+
+      <div id="testimonial" data-section="testimonial">
+        <TestimonialCardOne
+          title="What Our Fans Say"
+          description="Real reactions from viewers who experienced the epic finale of Stranger Things"
+          tag="Fan Reviews"
+          textboxLayout="default"
+          gridVariant="three-columns-all-equal-width"
+          animationType="slide-up"
+          testimonials={[
+            {
+              id: "1",
+              name: "Sarah Mitchell",
+              role: "Longtime Fan",
+              company: "Netflix Subscriber",
+              rating: 5,
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Sarah Mitchell fan review"
+            },
+            {
+              id: "2",
+              name: "Marcus Rodriguez",
+              role: "Binge Watcher",
+              company: "Streaming Enthusiast",
+              rating: 5,
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Marcus Rodriguez fan review"
+            },
+            {
+              id: "3",
+              name: "Emily Chen",
+              role: "Series Reviewer",
+              company: "Entertainment Weekly",
+              rating: 5,
+              imageSrc: "/placeholders/placeholder1.webp",
+              imageAlt: "Emily Chen professional review"
             }
           ]}
         />
