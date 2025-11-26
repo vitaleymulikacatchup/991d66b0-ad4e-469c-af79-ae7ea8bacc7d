@@ -66,7 +66,7 @@ export default function HomePage() {
       <div id="about" data-section="about">
         <AboutPhoneTimeline
           title="Meet the Heroes of Hawkins"
-          description="Follow the journey of Eleven, Mike, Dustin, Lucas, and Will as they face supernatural forces and fight to save their hometown from the Upside Down."
+          description="Follow the journey of Eleven, Mike, Dustin, Lucas, and Will as they face supernatural forces and fight to save their hometown from the Upside Down. Get the latest updates, behind-the-scenes content, and exclusive Stranger Things news delivered straight to your inbox. Everything you need to know about Stranger Things Season 5 and streaming options. Go deeper into the world of Stranger Things with exclusive content, cast interviews, and production insights."
           tag="The Cast"
           tagIcon={Users}
           buttons={[
