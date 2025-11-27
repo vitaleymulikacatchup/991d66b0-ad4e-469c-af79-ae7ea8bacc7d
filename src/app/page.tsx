@@ -31,7 +31,7 @@ export default function HomePage() {
             { name: "News", id: "/news" }
           ]}
           brandName="Stranger Things"
-          button={{ text: "Stream right Now eeee", href: "" }}
+          button={{  text: "Stream right Now LAST", href: "google.com"  }}
         />
       </div>
 

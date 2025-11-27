@@ -32,7 +32,7 @@ export default function NewsPage() {
             { name: "Cast", id: "/cast" }
           ]}
           brandName="Stranger Things"
-          button={{ text: "Stream right Now eeee", href: "" }}
+          button={{  text: "Stream right Now LAST", href: "google.com"  }}
         />
       </div>
 
