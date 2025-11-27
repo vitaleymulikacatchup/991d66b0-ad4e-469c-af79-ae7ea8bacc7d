@@ -118,7 +118,7 @@ export default function HomePage() {
               role: "Longtime Fan",
               company: "Netflix Subscriber",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Sarah Mitchell fan review"
             },
             {
@@ -127,7 +127,7 @@ export default function HomePage() {
               role: "Binge Watcher",
               company: "Streaming Enthusiast",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Marcus Rodriguez Gonzales fan review"
             },
             {
@@ -136,7 +136,7 @@ export default function HomePage() {
               role: "Series Reviewer",
               company: "Entertainment Weekly",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Emily Chen professional review"
             }
           ]}

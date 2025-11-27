@@ -113,7 +113,7 @@ export default function CastPage() {
               role: "Entertainment Weekly",
               company: "Chief TV Critic",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Entertainment Weekly critic"
             },
             {
@@ -122,7 +122,7 @@ export default function CastPage() {
               role: "Variety",
               company: "Senior TV Critic",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Variety magazine critic"
             },
             {
@@ -131,7 +131,7 @@ export default function CastPage() {
               role: "Netflix Subscriber",
               company: "Fan Since Day One",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Stranger Things fan viewer"
             },
             {
@@ -140,7 +140,7 @@ export default function CastPage() {
               role: "Streaming Enthusiast",
               company: "Binge Watcher",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Netflix subscriber viewer"
             }
           ]}

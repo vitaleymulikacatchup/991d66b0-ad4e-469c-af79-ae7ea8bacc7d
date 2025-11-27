@@ -184,7 +184,7 @@ export default function NewsPage() {
               role: "Newsletter Subscriber",
               company: "Fan Community Member",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Jennifer Walsh newsletter subscriber"
             },
             {
@@ -193,7 +193,7 @@ export default function NewsPage() {
               role: "Long-time Reader",
               company: "Streaming Enthusiast",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Kevin Martinez newsletter reader"
             },
             {
@@ -202,7 +202,7 @@ export default function NewsPage() {
               role: "Content Creator",
               company: "YouTube Channel",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Rachel Kim content creator"
             }
           ]}

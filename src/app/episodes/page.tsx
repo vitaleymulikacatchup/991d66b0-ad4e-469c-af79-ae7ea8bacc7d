@@ -204,7 +204,7 @@ export default function EpisodesPage() {
               role: "Superfan",
               company: "Netflix Subscriber",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Alexandra Williams fan review"
             },
             {
@@ -213,7 +213,7 @@ export default function EpisodesPage() {
               role: "Binge Watcher",
               company: "Day One Fan",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "David Thompson fan review"
             },
             {
@@ -222,7 +222,7 @@ export default function EpisodesPage() {
               role: "TV Critic",
               company: "Entertainment Today",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Jessica Park professional review"
             },
             {
@@ -231,7 +231,7 @@ export default function EpisodesPage() {
               role: "Streaming Expert",
               company: "Tech Reviews",
               rating: 5,
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764252605003-wf1evr66.jpg",
               imageAlt: "Michael Chang expert review"
             }
           ]}
