@@ -51,7 +51,7 @@ export default function HomePage() {
               href: "https://netflix.com/title/80057281"
             }
           ]}
-          imageSrc="/placeholders/placeholder1.webp"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1763107865405-8m9w07qs.jpg"
           imageAlt="Stranger Things Season 5 dark supernatural atmosphere"
           textPosition="bottom-left"
           showBlur={true}
@@ -82,21 +82,21 @@ export default function HomePage() {
               id: 1,
               title: "The Final Battle Begins",
               description: "As the Upside Down bleeds into Hawkins, Eleven must master her powers while the gang prepares for their ultimate confrontation with Vecna.",
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764237980327-46j9cux1.jpg",
               imageAlt: "Stranger Things Season 5 dark scenes"
             },
             {
               id: 2,
               title: "Monsters Unleashed",
               description: "New creatures from the Upside Down emerge as our heroes discover the true extent of the supernatural threat facing their world.",
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764237980327-46j9cux1.jpg",
               imageAlt: "Stranger Things upside down monsters"
             },
             {
               id: 3,
               title: "Hawkins Falls",
               description: "The town of Hawkins becomes the epicenter of a supernatural war that will determine the fate of both worlds.",
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34kFQ1mvageIxtFsoHwjFOCooyh/uploaded-1764237980327-46j9cux1.jpg",
               imageAlt: "Stranger Things Hawkins town supernatural"
             }
           ]}
