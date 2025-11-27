@@ -30,7 +30,7 @@ export default function CastPage() {
             { name: "Episodes", id: "/episodes" },
             { name: "News", id: "/news" }
           ]}
-          brandName="Stranger Things Last seasson"
+          brandName="Stranger Things"
           button={{ text: "Stream right Now", href: "http://google.com" }}
         />
       </div>
