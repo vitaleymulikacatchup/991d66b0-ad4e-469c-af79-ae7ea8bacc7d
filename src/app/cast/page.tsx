@@ -136,7 +136,7 @@ export default function CastPage() {
             },
             {
               id: "4",
-              name: "Marcus Rodriguez",
+              name: "Marcus Rodriguez Gonzales",
               role: "Streaming Enthusiast",
               company: "Binge Watcher",
               rating: 5,

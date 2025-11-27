@@ -123,12 +123,12 @@ export default function HomePage() {
             },
             {
               id: "2",
-              name: "Marcus Rodriguez",
+              name: "Marcus Rodriguez Gonzales",
               role: "Binge Watcher",
               company: "Streaming Enthusiast",
               rating: 5,
               imageSrc: "/placeholders/placeholder1.webp",
-              imageAlt: "Marcus Rodriguez fan review"
+              imageAlt: "Marcus Rodriguez Gonzales fan review"
             },
             {
               id: "3",
